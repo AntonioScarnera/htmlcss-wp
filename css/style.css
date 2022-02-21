@@ -14,3 +14,78 @@
     display: table;
     clear: both;
 }
+
+/* page style */
+body{
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.debug{
+    border: 1px solid black;
+}
+
+/* header */
+
+#logo img{
+    height: 70px;
+    padding-right: 30px;
+    border-right: 1px solid #d7d7d7;
+}
+
+/* navbar */
+nav{
+    padding: 40px 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+nav li a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hoverlay::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner-text{
+    width: 55%;
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.hero .banner-text h1{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1em;
+}
